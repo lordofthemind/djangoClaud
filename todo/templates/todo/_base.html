@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudToDoHome</title>
+    <style>
+        /* Define your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        /* Additional CSS for the All Tasks template */
+        .btn-create-task {
+            margin-bottom: 20px;
+        }
+
+        .table th,
+        .table td {
+            vertical-align: middle;
+            /* Align text vertically in table cells */
+        }
+
+        .table th {
+            background-color: #007bff;
+            /* Blue header background color */
+            color: #fff;
+            /* White text color */
+        }
+
+        .table tr:hover {
+            background-color: #e0e0e0;
+            /* Hover effect for table rows */
+        }
+
+        /* Additional CSS for the Create a Task template */
+        .form-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Cloud Todo</h1>
+    </header>
+    <div class="container">
+        {% block content %}
+        <!-- Content from child templates will be placed here -->
+        {% endblock %}
+    </div>
+</body>
+
+</html>

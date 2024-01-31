@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.sqlite3
+db.sqlite3
+
+# Logs
+*.log
+
+# Secret key
+*.secret
+
+# Media files
+media/
+
+# Virtual environment
+venv/
+.env
+
+# IDE-specific files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Dependency folders
+lib/
+lib64/
+parts/
+sdist/
+build/
+dist/
+egg-info/
+.eggs/
+bin/
+var/
+*.egg
+
+# Compiled Python files
+*.pyc
+*.pyo
+
+# Translation files
+*.mo
+
+# Ignore Django specific settings
+*.pyc
+*~
+*.swp
+*.log
+local_settings.py
+
+# Ignore sensitive information
+secrets.json
+
+# Ignore environment files
+.env
+
+# Ignore database migrations
+**/migrations/

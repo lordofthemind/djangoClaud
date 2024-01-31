@@ -1,0 +1,12 @@
+{% extends 'todo/_base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Register To Taskly</h1>
+    <a href="{% url 'login-user' %}" class="btn btn-primary btn-create-task">Log-In User</a>
+    <form method="POST" autocomplete="off" class="form-container">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Register User</button>
+    </form>
+</div>
+{% endblock %}

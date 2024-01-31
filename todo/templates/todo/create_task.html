@@ -1,0 +1,12 @@
+{% extends 'todo/_base.html' %}
+{% block content %}
+<div class="container">
+    <h1>Create a Task</h1>
+    <a href="{% url 'all-task' %}" class="btn btn-primary">All Tasks</a>
+    <form method="POST" autocomplete="off" class="form-container">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Create Task</button>
+    </form>
+</div>
+{% endblock %}

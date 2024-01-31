@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Additional CSS for the All Tasks template */
+.btn-create-task {
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  /* Align text vertically in table cells */
+}
+
+.table th {
+  background-color: #007bff;
+  /* Blue header background color */
+  color: #fff;
+  /* White text color */
+}
+
+.table tr:hover {
+  background-color: #e0e0e0;
+  /* Hover effect for table rows */
+}
+
+/* Additional CSS for the Create a Task template */
+.form-container {
+  margin-top: 20px;
+}
+/* Additional CSS for the CreateUserForm */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Apply the same styling to labels as table headers */
+label {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Style the submit button to match the .btn-create-task style */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
